@@ -1,0 +1,29 @@
+{
+    "name": "akash/laravel-unique-slug",
+    "description": "A Unique Slug Generator for Laravel",
+    "type": "composer-plugin",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Akash\\LaravelUniqueSlug\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "akash",
+            "email": "akash904069@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Akash\\LaravelUniqueSlug\\UniqueSlugServiceProvider"
+            ],
+            "aliases": {
+                "UniqueSlug": "Akash\\LaravelUniqueSlug\\UniqueSlug"
+            }
+        }
+    }
+}
